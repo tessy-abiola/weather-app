@@ -125,7 +125,7 @@ h1 i {
 
 .search-box button {
     padding: 12px 24px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, hsl(229, 76%, 66%) 0%, #764ba2 100%);
     color: white;
     border: none;
     border-radius: 10px;
