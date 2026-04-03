@@ -76,7 +76,6 @@ body {
     }
 }
 
-
 .weather-container {
     width: 100%;
     max-width: 500px;
@@ -132,6 +131,7 @@ h1 i {
     cursor: pointer;
     font-size: 16px;
     transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
 }
 
 .search-box button:hover {
@@ -254,8 +254,12 @@ h1 i {
     padding: 1rem;
 }
 
+/* ==================== */
+/* ALL MEDIA QUERIES COMBINED */
+/* ==================== */
+
 @media (max-width: 768px) {
-    
+    /* Clouds */
     .cloud-1 {
         font-size: 60px;
         opacity: 0.3;
@@ -284,10 +288,12 @@ h1 i {
         left: -8%;
     }
     
+    /* Card */
     .weather-card {
         padding: 1.5rem;
     }
     
+    /* Text sizes */
     .temperature {
         font-size: 36px;
     }
@@ -296,8 +302,49 @@ h1 i {
         font-size: 20px;
     }
     
+    /* Button */
     .search-box button {
         padding: 12px 16px;
         font-size: 14px;
+    }
+}
+
+/* Extra small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-box input {
+        width: 100%;
+    }
+    
+    .search-box button {
+        width: 100%;
+        white-space: normal;
+    }
+    
+    .weather-card {
+        padding: 1rem;
+    }
+    
+    .temperature {
+        font-size: 32px;
+    }
+    
+    .city-name {
+        font-size: 18px;
+    }
+    
+    .detail-item i {
+        font-size: 20px;
+    }
+    
+    .detail-item span {
+        font-size: 14px;
+    }
+    
+    .detail-item p {
+        font-size: 12px;
     }
 }
